@@ -2,6 +2,22 @@
 
 namespace Demo_OOP_Session_2
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Car car = new Car();
+            car.Id = 1;
+            car.Model = "BMW";
+            car.Speed = 200;
+            Console.WriteLine(car);
+
+
+
+            
+        }
+    }
+
     internal class Program
     {
         // Entry point of the program
@@ -39,7 +55,14 @@ namespace Demo_OOP_Session_2
             #endregion
 
 
-            ;
+
+            Car c1 = new Car(1);
+
+            c1 = new Car(2, "BMW");
+
+            Console.WriteLine(c1);
+            Console.WriteLine("***************");
+
 
         }
     }
